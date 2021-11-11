@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="随机点名.js"></script> -->
+    <style>
+        #r {
+            background-color: blue;
+        }
+
+        div {
+            width: 800px;
+            border: 1px solid black;
+            margin: 0 auto;
+            text-align: center;
+            background-color: chartreuse;
+        }
+
+        .Random {
+            width: 500px;
+            border: 1px solid black;
+            font-size: 10px;
+            border-left: 5px;
+        }
+
+        .c {
+            text-align: center;
+            border-top: -10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>Random seating chart</div>
+    <table border="1" width="800" align="center" style="border-collapse: collapse" id="x" title-layout=>
+
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>帅哥</td>
+            <td style="width: 80px;"> </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>小黄</td>
+            <td>大黄</td>
+            <td>球球</td>
+            <td>超开心</td>
+            <td></td>
+            <td>好帅</td>
+            <td>中奖了</td>
+            <td>倒霉</td>
+            <td>天神下</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>王郡</td>
+            <td>杨勋</td>
+            <td>刘春雨</td>
+            <td></td>
+            <td>李昌鑫</td>
+            <td>周航</td>
+            <td>高瑞</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Accord</td>
+            <td>sbsbsb</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>sssss</td>
+            <td>bbbbb</td>
+            <td>ccccc</td>
+            <td>ddddd</td>
+            <td></td>
+            <td>eeeee</td>
+            <td>fffff</td>
+            <td>ggggg</td>
+            <td>hhhhh</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td>ooooo</td>
+            <td>ppppp</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+
+    <div class="c"><button id="b">随机点名</button><a href="">切换方向</a> <a href="">显示详情</a></div>
+    <div class="Random">
+        <h4>数值从 1-5 越来越弱</h4>
+        <span>王郡 : 3 -- 0基础，前期代码量不够，态度积极</span><br />
+        <span>杨勋 : 4.5 -- 建议重读，0基础，反应较慢，有点想换行不做开发了</span><br />
+        <span>刘春雨 : 5 -- 建议重读，年龄小，基础弱，前期学习态度较差，现在好了</span><br />
+        <span>李昌鑫 : 2 -- 年龄小，非常聪明，前期感情遇到问题，影响了学习</span><br />
+        <span>李昌鑫 : 2 -- 年龄小，非常聪明，前期感情遇到问题，影响了学习</span><br />
+        <span>李昌鑫 : 2 -- 年龄小，非常聪明，前期感情遇到问题，影响了学习</span><br />
+    </div>
+    <script>
+        const obj = ['帅哥', '小黄', '球球', '超开心', '好帅', '中奖了', '倒霉', '天神下', '王郡', '杨勋', '刘春雨', '李昌鑫', '周航',
+            '高瑞', 'sssss', 'bbbbb', 'dddddd', 'Accord', 'sbsbsb', 'ooooo', 'ppppp', 'fffff', 'ggggg', 'hhhhh'
+        ]
+        // const str = document.querySelector('#b')
+        console.log(obj[getRadom([i], obj.length - 1)])
+    </script>
+</body>
+
+
+</html>
